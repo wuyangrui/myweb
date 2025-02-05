@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="/css/vue.css">
+  <!-- <link rel="stylesheet" href="/css/dark.css"> -->
+</head>
+<body>
+  <nav>
+    <a href="#/">首页</a>
+    <a href="#/IT与AI技术/">IT与AI技术</a>
+    <a href="#/项目与开发/">项目与开发</a>
+    <a href="#/人工智能大产业/">人工智能大产业</a>
+    <a href="#/青年商业说/">青年商业说</a>
+    <a href="#/经济社会脉动/">经济社会脉动</a>
+  </nav>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      loadSidebar: true,
+      mergeNavbar: true,
+      coverpage: false,
+      onlyCover: false,
+      name: '',
+      repo: ''
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="/js/docsify.min.js"></script>
+  <script src="/js/jquery-3.7.0.min.js"></script>
+  <script>
+     $('nav a').click(function(){
+      //  console.log('sss')
+      $(this).siblings().removeClass('active')
+      $(this).addClass('active')
+     });
+  </script>
+</body>
+</html>
